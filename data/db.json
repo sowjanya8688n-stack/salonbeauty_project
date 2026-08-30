@@ -1,0 +1,405 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "name": "Hair Cut",
+      "category": "Hair",
+      "price": 500,
+      "duration": "45 mins",
+      "description": "Professional haircut and styling for a fresh and modern look.",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "2",
+      "name": "Hair Spa",
+      "category": "Hair",
+      "price": 1200,
+      "duration": "60 mins",
+      "description": "Deep conditioning hair spa treatment for healthy and shiny hair.",
+      "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "3",
+      "name": "Hair Coloring",
+      "category": "Hair",
+      "price": 1800,
+      "duration": "90 mins",
+      "description": "Professional hair coloring with beautiful and stylish shades.",
+      "image": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "4",
+      "name": "Keratin Treatment",
+      "category": "Hair",
+      "price": 3500,
+      "duration": "150 mins",
+      "description": "Keratin treatment for smooth, shiny and manageable hair.",
+      "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "5",
+      "name": "Hair Styling",
+      "category": "Hair",
+      "price": 900,
+      "duration": "45 mins",
+      "description": "Professional hair styling for parties and special occasions.",
+      "image": "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "6",
+      "name": "Hair Smoothening",
+      "category": "Hair",
+      "price": 4000,
+      "duration": "180 mins",
+      "description": "Smoothening treatment for soft, straight and manageable hair.",
+      "image": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "7",
+      "name": "Facial",
+      "category": "Skin",
+      "price": 800,
+      "duration": "45 mins",
+      "description": "Refreshing facial treatment for healthy and glowing skin.",
+      "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "8",
+      "name": "Face Cleanup",
+      "category": "Skin",
+      "price": 600,
+      "duration": "30 mins",
+      "description": "Deep cleansing treatment that removes dirt and refreshes your skin.",
+      "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "9",
+      "name": "Skin Brightening",
+      "category": "Skin",
+      "price": 1500,
+      "duration": "60 mins",
+      "description": "Skin care treatment designed to improve brightness and freshness.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "10",
+      "name": "Waxing",
+      "category": "Skin",
+      "price": 900,
+      "duration": "60 mins",
+      "description": "Professional waxing service for smooth and soft skin.",
+      "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "11",
+      "name": "Threading",
+      "category": "Beauty",
+      "price": 150,
+      "duration": "15 mins",
+      "description": "Professional eyebrow shaping and facial threading service.",
+      "image": "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "12",
+      "name": "Eyebrow Shaping",
+      "category": "Beauty",
+      "price": 200,
+      "duration": "20 mins",
+      "description": "Professional eyebrow shaping to enhance your facial features.",
+      "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "13",
+      "name": "Bridal Makeup",
+      "category": "Makeup",
+      "price": 5000,
+      "duration": "120 mins",
+      "description": "Complete professional bridal makeup package for your special day.",
+      "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "14",
+      "name": "Party Makeup",
+      "category": "Makeup",
+      "price": 2500,
+      "duration": "75 mins",
+      "description": "Elegant professional makeup for parties and special events.",
+      "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "15",
+      "name": "HD Makeup",
+      "category": "Makeup",
+      "price": 3500,
+      "duration": "90 mins",
+      "description": "High-definition makeup for a flawless and camera-ready finish.",
+      "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "16",
+      "name": "Manicure",
+      "category": "Nails",
+      "price": 600,
+      "duration": "40 mins",
+      "description": "Complete hand and nail care with shaping and finishing.",
+      "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "17",
+      "name": "Pedicure",
+      "category": "Nails",
+      "price": 700,
+      "duration": "45 mins",
+      "description": "Relaxing foot and nail care treatment for clean and beautiful feet.",
+      "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "18",
+      "name": "Nail Art",
+      "category": "Nails",
+      "price": 1000,
+      "duration": "60 mins",
+      "description": "Creative nail art with stylish designs and beautiful finishes.",
+      "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "19",
+      "name": "Gel Nails",
+      "category": "Nails",
+      "price": 1400,
+      "duration": "75 mins",
+      "description": "Long-lasting gel nail application with a glossy finish.",
+      "image": "https://images.unsplash.com/photo-1610992015762-45dca7f20b66?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "20",
+      "name": "Body Massage",
+      "category": "Spa",
+      "price": 2000,
+      "duration": "60 mins",
+      "description": "Relaxing full body massage for stress and muscle relief.",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "21",
+      "name": "Head Massage",
+      "category": "Spa",
+      "price": 700,
+      "duration": "30 mins",
+      "description": "Relaxing head massage designed to reduce stress and tension.",
+      "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "22",
+      "name": "Aromatherapy Massage",
+      "category": "Spa",
+      "price": 2500,
+      "duration": "75 mins",
+      "description": "Relaxing massage experience using aromatic essential oils.",
+      "image": "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "23",
+      "name": "Bridal Hair Styling",
+      "category": "Bridal",
+      "price": 2500,
+      "duration": "90 mins",
+      "description": "Elegant bridal hairstyle designed to complement your wedding look.",
+      "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "24",
+      "name": "Bridal Package",
+      "category": "Bridal",
+      "price": 8500,
+      "duration": "240 mins",
+      "description": "Complete bridal package including makeup, hairstyle and beauty care.",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@salonbeauty.com",
+      "phone": "9999999999",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Demo User",
+      "email": "user@salonbeauty.com",
+      "phone": "9876543210",
+      "password": "123456",
+      "role": "user"
+    },
+    {
+      "name": "sowjanaya",
+      "email": "sowjanya8688n@gmail.com",
+      "phone": "7989774250",
+      "password": "Sowji1234",
+      "role": "user",
+      "id": "UCAWpO3cx6A"
+    },
+    {
+      "name": "vamsibehara",
+      "email": "vamsibehara@agshealth.com",
+      "phone": "9381498816",
+      "password": "Summer@2026",
+      "role": "user",
+      "id": "36xGzlXG_MU"
+    }
+  ],
+  "bookings": [
+    {
+      "customerName": "sowjanya",
+      "email": "sowjanya8688n@gmail.com",
+      "phone": "9491106855",
+      "serviceId": "2",
+      "serviceName": "Hair Spa",
+      "price": 1200,
+      "bookingDate": "2005-09-07",
+      "bookingTime": "14:30",
+      "status": "Pending",
+      "id": "iZ5l5Q5led0"
+    },
+    {
+      "customerName": "rani",
+      "email": "rani1234@gmail.com",
+      "phone": "7989794250",
+      "serviceId": "3",
+      "serviceName": "Hair Coloring",
+      "price": 1800,
+      "bookingDate": "2003-09-07",
+      "bookingTime": "14:30",
+      "status": "Pending",
+      "id": "eyw1GZ_Pjyk"
+    }
+  ],
+  "professionals": [
+    {
+      "id": "1",
+      "name": "Anjali Sharma",
+      "specialization": "Hair Stylist",
+      "experience": "6 Years",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "2",
+      "name": "Priya Reddy",
+      "specialization": "Makeup Artist",
+      "experience": "5 Years",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "3",
+      "name": "Neha Verma",
+      "specialization": "Skin Specialist",
+      "experience": "4 Years",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "4",
+      "name": "Kavya Rao",
+      "specialization": "Nail Artist",
+      "experience": "3 Years",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Hair",
+      "description": "Hair cutting, coloring, styling and treatments."
+    },
+    {
+      "id": "2",
+      "name": "Skin",
+      "description": "Facials, cleanup and professional skin care."
+    },
+    {
+      "id": "3",
+      "name": "Makeup",
+      "description": "Professional party and special occasion makeup."
+    },
+    {
+      "id": "4",
+      "name": "Nails",
+      "description": "Manicure, pedicure, nail art and gel nails."
+    },
+    {
+      "id": "5",
+      "name": "Spa",
+      "description": "Massage, relaxation and wellness treatments."
+    },
+    {
+      "id": "6",
+      "name": "Beauty",
+      "description": "Threading, eyebrow shaping and beauty care."
+    },
+    {
+      "id": "7",
+      "name": "Bridal",
+      "description": "Complete bridal beauty, makeup and hair services."
+    }
+  ],
+  "offers": [
+    {
+      "id": "1",
+      "title": "First Booking Offer",
+      "description": "Get 20% discount on your first appointment.",
+      "discount": 20,
+      "code": "BEAUTY20",
+      "expiry": "2026-12-31",
+      "active": true
+    },
+    {
+      "id": "2",
+      "title": "Bridal Special",
+      "description": "Get 15% discount on selected bridal services.",
+      "discount": 15,
+      "code": "BRIDE15",
+      "expiry": "2026-12-31",
+      "active": true
+    },
+    {
+      "id": "3",
+      "title": "Spa Special",
+      "description": "Get 10% discount on selected spa treatments.",
+      "discount": 10,
+      "code": "SPA10",
+      "expiry": "2026-11-30",
+      "active": true
+    }
+  ],
+  "payments": [],
+  "reviews": [
+    {
+      "id": "1",
+      "customer": "Anusha",
+      "service": "Hair Cut",
+      "rating": 5,
+      "comment": "Excellent haircut and friendly service."
+    },
+    {
+      "id": "2",
+      "customer": "Divya",
+      "service": "Facial",
+      "rating": 5,
+      "comment": "Very relaxing facial and great service."
+    },
+    {
+      "id": "3",
+      "customer": "Meghana",
+      "service": "Bridal Makeup",
+      "rating": 4,
+      "comment": "Beautiful makeup and professional staff."
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

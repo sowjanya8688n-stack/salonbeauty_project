@@ -1,0 +1,564 @@
+.manage-users-layout {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff9fc 0%,
+      #f7f2fa 50%,
+      #fff7fb 100%
+    );
+}
+
+/* =============================
+   MAIN PAGE
+============================= */
+
+.manage-users-page {
+  margin-left: 270px;
+
+  min-height: 100vh;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+}
+
+/* =============================
+   HEADER
+============================= */
+
+.manage-users-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 28px 30px;
+
+  margin-bottom: 25px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fff3f9
+    );
+
+  border: 1px solid #f1dbe8;
+
+  box-shadow:
+    0 12px 35px
+    rgba(75, 35, 70, 0.08);
+}
+
+.manage-users-label {
+  margin: 0 0 7px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c1427b;
+}
+
+.manage-users-header h1 {
+  margin: 0;
+
+  font-size: 33px;
+
+  color: #2d2030;
+}
+
+.manage-users-subtitle {
+  margin: 8px 0 0;
+
+  color: #837485;
+
+  font-size: 15px;
+}
+
+/* =============================
+   TOTAL USERS CARD
+============================= */
+
+.users-count-card {
+  min-width: 180px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px 22px;
+
+  border-radius: 18px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #69265f,
+      #db4f8e
+    );
+
+  box-shadow:
+    0 10px 30px
+    rgba(201, 66, 128, 0.25);
+}
+
+.users-count-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background:
+    rgba(255, 255, 255, 0.18);
+
+  font-size: 25px;
+}
+
+.users-count-card p {
+  margin: 0;
+
+  font-size: 13px;
+
+  opacity: 0.9;
+}
+
+.users-count-card h2 {
+  margin: 3px 0 0;
+
+  font-size: 28px;
+}
+
+/* =============================
+   TOOLBAR
+============================= */
+
+.users-toolbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.users-search-box {
+  flex: 1;
+
+  max-width: 520px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  background: white;
+
+  padding: 0 16px;
+
+  border-radius: 13px;
+
+  border: 1px solid #eadde6;
+
+  box-shadow:
+    0 6px 20px
+    rgba(70, 30, 70, 0.05);
+}
+
+.users-search-box input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  padding: 14px 5px;
+
+  font-size: 14px;
+
+  background: transparent;
+
+  color: #3e3340;
+}
+
+.users-search-box input::placeholder {
+  color: #a99ba9;
+}
+
+.users-refresh-btn {
+  border: none;
+
+  padding: 13px 20px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #7b316c,
+      #d24989
+    );
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.users-refresh-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px
+    rgba(173, 55, 118, 0.25);
+}
+
+/* =============================
+   TABLE WRAPPER
+============================= */
+
+.users-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: 22px;
+
+  background: white;
+
+  border: 1px solid #eee0e8;
+
+  box-shadow:
+    0 12px 35px
+    rgba(58, 30, 65, 0.08);
+}
+
+/* =============================
+   TABLE
+============================= */
+
+.users-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background:
+    linear-gradient(
+      135deg,
+      #341c38,
+      #692b5d
+    );
+}
+
+.users-table th {
+  padding: 18px 20px;
+
+  text-align: left;
+
+  color: white;
+
+  font-size: 13px;
+
+  letter-spacing: 0.5px;
+}
+
+.users-table td {
+  padding: 18px 20px;
+
+  border-bottom:
+    1px solid #f2e8ef;
+
+  color: #5d515e;
+
+  font-size: 14px;
+}
+
+.users-table tbody tr {
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.users-table tbody tr:hover {
+  background: #fff7fb;
+}
+
+.users-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =============================
+   USER PROFILE
+============================= */
+
+.user-profile-cell {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eba0c4,
+      #bd3e7b
+    );
+
+  color: white;
+
+  font-weight: 700;
+
+  font-size: 18px;
+
+  box-shadow:
+    0 5px 14px
+    rgba(187, 60, 120, 0.2);
+}
+
+.user-profile-cell strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #382b3a;
+}
+
+.user-profile-cell span {
+  color: #9a8d9c;
+
+  font-size: 12px;
+}
+
+.user-email {
+  color: #78496b;
+
+  font-weight: 500;
+}
+
+/* =============================
+   ROLE
+============================= */
+
+.role-badge {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border-radius: 20px;
+
+  text-transform: capitalize;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.role-user {
+  color: #2b6596;
+
+  background: #e7f3ff;
+
+  border: 1px solid #c6e2f8;
+}
+
+.role-admin {
+  color: #8c2860;
+
+  background: #fde8f3;
+
+  border: 1px solid #f2c5db;
+}
+
+/* =============================
+   DELETE BUTTON
+============================= */
+
+.user-delete-button {
+  border: none;
+
+  padding: 9px 15px;
+
+  border-radius: 10px;
+
+  background: #fff0f2;
+
+  color: #c3384d;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.user-delete-button:hover {
+  background: #d93e56;
+
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 16px
+    rgba(217, 62, 86, 0.25);
+}
+
+/* =============================
+   EMPTY / LOADING
+============================= */
+
+.users-loading,
+.users-empty {
+  padding: 65px 30px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 22px;
+
+  border: 1px solid #eee0e8;
+
+  box-shadow:
+    0 12px 35px
+    rgba(58, 30, 65, 0.08);
+}
+
+.users-loading {
+  color: #a13f75;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+.users-empty-icon {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fbe8f2;
+
+  font-size: 31px;
+}
+
+.users-empty h2 {
+  margin: 0;
+
+  color: #3d2d3f;
+}
+
+.users-empty p {
+  color: #8b7c8d;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media (max-width: 900px) {
+
+  .manage-users-page {
+    margin-left: 220px;
+
+    padding: 22px;
+  }
+
+  .manage-users-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .users-count-card {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .manage-users-page {
+    margin-left: 0;
+
+    padding: 15px;
+  }
+
+  .manage-users-header {
+    padding: 20px;
+  }
+
+  .manage-users-header h1 {
+    font-size: 26px;
+  }
+
+  .users-toolbar {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .users-search-box {
+    max-width: none;
+  }
+
+  .users-refresh-btn {
+    width: 100%;
+  }
+}

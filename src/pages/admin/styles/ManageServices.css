@@ -1,0 +1,221 @@
+.admin-page {
+  margin-left: 260px;
+
+  min-height: 100vh;
+
+  padding: 35px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8f7fc,
+      #fff7fa
+    );
+
+  box-sizing: border-box;
+}
+
+.admin-page-header {
+  margin-bottom: 25px;
+}
+
+.admin-page-header h1 {
+  margin: 0 0 7px;
+
+  color: #252131;
+
+  font-size: 30px;
+}
+
+.admin-page-header p {
+  color: #888391;
+
+  font-size: 14px;
+}
+
+.admin-form {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+
+  padding: 25px;
+
+  margin-bottom: 30px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border:
+    1px solid #e0dce4;
+
+  border-radius: 10px;
+
+  background: #fcfcfe;
+
+  font-size: 14px;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.admin-form input:focus,
+.admin-form select:focus,
+.admin-form textarea:focus {
+  border-color: #f52d78;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(245, 45, 120, 0.08);
+}
+
+.admin-form textarea {
+  min-height: 100px;
+
+  resize: vertical;
+
+  grid-column: 1 / -1;
+}
+
+.admin-form button {
+  padding: 13px 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f52d78,
+      #ff67a3
+    );
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.admin-form button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(245, 45, 120, 0.25);
+}
+
+.admin-table-container {
+  padding: 22px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.06);
+
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  padding: 14px;
+
+  background: #faf9fc;
+
+  color: #777281;
+
+  text-align: left;
+
+  font-size: 12px;
+}
+
+.admin-table td {
+  padding: 14px;
+
+  border-bottom:
+    1px solid #eee;
+
+  color: #444;
+
+  font-size: 13px;
+}
+
+.admin-table tr:hover {
+  background: #fff8fb;
+}
+
+.admin-table img {
+  width: 65px;
+  height: 65px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.admin-delete-btn {
+  padding: 8px 13px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #ffe6ee;
+
+  color: #d92f5d;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.admin-delete-btn:hover {
+  background: #d92f5d;
+
+  color: white;
+}
+
+.empty-data {
+  text-align: center;
+
+  padding: 35px !important;
+
+  color: #999 !important;
+}
+
+@media (max-width: 900px) {
+  .admin-form {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form textarea {
+    grid-column: auto;
+  }
+}

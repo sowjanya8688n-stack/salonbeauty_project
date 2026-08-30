@@ -1,0 +1,235 @@
+/* ==================================
+   WEBSITE HEADER
+================================== */
+
+.website-header {
+  width: 100%;
+  height: 80px;
+
+  background: #ffffff;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  z-index: 5000;
+
+  box-shadow:
+    0 4px 20px
+    rgba(30, 30, 50, 0.08);
+}
+
+
+/* ==================================
+   NAVBAR
+================================== */
+
+.website-navbar {
+  width: 100%;
+  height: 80px;
+
+  padding: 0 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+
+/* ==================================
+   LOGO
+================================== */
+
+.website-logo {
+  color: #222232 !important;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 29px;
+  font-weight: 700;
+
+  text-decoration: none !important;
+
+  white-space: nowrap;
+}
+
+.website-logo span {
+  color: #ed3e89;
+}
+
+
+/* ==================================
+   NAVIGATION LINKS
+================================== */
+
+.website-nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+}
+
+.nav-item {
+  position: relative;
+
+  color: #3c3c49 !important;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  padding: 30px 0;
+
+  transition: 0.3s ease;
+}
+
+
+/* Pink line under links */
+
+.nav-item::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 20px;
+
+  width: 0;
+  height: 2px;
+
+  background: #ed3e89;
+
+  border-radius: 10px;
+
+  transition: width 0.3s ease;
+}
+
+
+.nav-item:hover {
+  color: #ed3e89 !important;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+
+/* Active page */
+
+.nav-item.nav-active {
+  color: #ed3e89 !important;
+}
+
+.nav-item.nav-active::after {
+  width: 100%;
+}
+
+
+/* ==================================
+   REGISTER BUTTON
+================================== */
+
+.navbar-register-button {
+  padding: 12px 25px;
+
+  color: white !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e83e8c,
+      #ff67aa
+    );
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 6px 18px
+    rgba(232, 62, 140, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.navbar-register-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px
+    rgba(232, 62, 140, 0.35);
+}
+
+
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width: 900px) {
+
+  .website-navbar {
+    padding: 0 25px;
+  }
+
+  .website-nav-links {
+    gap: 18px;
+  }
+
+  .website-logo {
+    font-size: 25px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+}
+
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 700px) {
+
+  .website-header {
+    height: auto;
+  }
+
+  .website-navbar {
+    height: auto;
+
+    padding: 18px 20px;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .website-nav-links {
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px 20px;
+  }
+
+  .nav-item {
+    padding: 5px 0;
+  }
+
+  .nav-item::after {
+    bottom: 0;
+  }
+}

@@ -1,0 +1,190 @@
+.booking-page {
+  min-height: 100vh;
+  padding: 70px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #fff7fa,
+    #ffffff
+  );
+}
+
+.booking-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.booking-header > p {
+  color: #f52d78;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.booking-header h1 {
+  margin: 8px 0;
+  color: #252131;
+  font-size: 38px;
+}
+
+.booking-header span {
+  color: #777;
+}
+
+.booking-card {
+  max-width: 650px;
+  margin: auto;
+
+  padding: 30px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 12px 40px
+    rgba(35, 31, 50, 0.08);
+}
+
+.selected-service {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  background: #fff4f8;
+}
+
+.selected-service img {
+  width: 110px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.selected-service span {
+  color: #f52d78;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.selected-service h3 {
+  margin: 5px 0;
+}
+
+.selected-service p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.selected-service strong {
+  color: #f52d78;
+  font-size: 18px;
+}
+
+.booking-form-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 18px;
+}
+
+.booking-form-group label {
+  margin-bottom: 7px;
+
+  color: #444;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.booking-form-group input {
+  padding: 13px 14px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+.booking-form-group input:focus {
+  border-color: #f52d78;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(245, 45, 120, 0.08);
+}
+
+.booking-submit-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #f52d78,
+    #ff67a3
+  );
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.booking-submit-btn:hover {
+  box-shadow:
+    0 8px 20px
+    rgba(245, 45, 120, 0.28);
+}
+
+.no-service {
+  margin-bottom: 25px;
+
+  padding: 20px;
+
+  background: #fff4f8;
+
+  text-align: center;
+
+  border-radius: 12px;
+}
+
+.no-service button {
+  margin-top: 10px;
+
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #f52d78;
+
+  color: white;
+
+  cursor: pointer;
+}

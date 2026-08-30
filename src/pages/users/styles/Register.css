@@ -1,0 +1,320 @@
+/* ==============================
+   REGISTER PAGE
+============================== */
+
+.auth-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 120, 170, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(214, 140, 255, 0.16),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #fff7fb,
+      #f9f4ff
+    );
+
+  box-sizing: border-box;
+}
+
+/* ==============================
+   FORM CARD
+============================== */
+
+.auth-box {
+  width: 100%;
+  max-width: 470px;
+
+  padding: 38px 35px;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  border:
+    1px solid rgba(
+      255,
+      255,
+      255,
+      0.7
+    );
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 18px 50px
+    rgba(84, 42, 74, 0.12);
+
+  backdrop-filter: blur(12px);
+
+  -webkit-backdrop-filter: blur(12px);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* Decorative top line */
+
+.auth-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff4f8b,
+      #e24fd8,
+      #9f6bff
+    );
+}
+
+/* ==============================
+   TITLE
+============================== */
+
+.auth-box h1 {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 32px;
+  font-weight: 800;
+
+  color: #2f2633;
+}
+
+.auth-box > p {
+  margin:
+    10px 0 28px;
+
+  text-align: center;
+
+  color: #8b818f;
+
+  font-size: 14px;
+}
+
+/* ==============================
+   FORM
+============================== */
+
+.auth-box form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+/* ==============================
+   INPUTS
+============================== */
+
+.auth-box input {
+  width: 100%;
+
+  padding:
+    14px 16px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid #e8dfe9;
+
+  border-radius: 12px;
+
+  background: #fcfafc;
+
+  color: #2f2633;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.auth-box input::placeholder {
+  color: #aaa0ad;
+}
+
+/* INPUT FOCUS */
+
+.auth-box input:focus {
+  border-color: #ff4f8b;
+
+  background: white;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(255, 79, 139, 0.10);
+
+  transform: translateY(-1px);
+}
+
+/* ==============================
+   REGISTER BUTTON
+============================== */
+
+.auth-box .btn {
+  width: 100%;
+
+  margin-top: 5px;
+
+  padding:
+    14px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4f8b,
+      #e33779
+    );
+
+  box-shadow:
+    0 10px 24px
+    rgba(227, 55, 121, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.auth-box .btn:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 14px 28px
+    rgba(227, 55, 121, 0.35);
+}
+
+.auth-box .btn:active {
+  transform:
+    translateY(0);
+}
+
+/* ==============================
+   LOGIN LINK
+============================== */
+
+.auth-link {
+  margin:
+    24px 0 0 !important;
+
+  text-align: center;
+
+  color: #77707c !important;
+
+  font-size: 14px !important;
+}
+
+.auth-link a {
+  color: #ef3e7f;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  margin-left: 4px;
+
+  transition:
+    color 0.2s ease;
+}
+
+.auth-link a:hover {
+  color: #c92867;
+
+  text-decoration: underline;
+}
+
+/* ==============================
+   HOVER CARD
+============================== */
+
+.auth-box {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.auth-box:hover {
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 22px 60px
+    rgba(84, 42, 74, 0.16);
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 600px) {
+
+  .auth-page {
+    padding:
+      25px 15px;
+  }
+
+  .auth-box {
+    padding:
+      30px 22px;
+
+    border-radius: 18px;
+  }
+
+  .auth-box h1 {
+    font-size: 27px;
+  }
+
+  .auth-box input {
+    padding:
+      13px 14px;
+  }
+
+  .auth-box .btn {
+    padding:
+      13px;
+  }
+}

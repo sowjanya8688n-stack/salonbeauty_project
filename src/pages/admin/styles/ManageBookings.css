@@ -1,0 +1,443 @@
+.manage-bookings-layout {
+  min-height: 100vh;
+  background: #f8f5fa;
+}
+
+.manage-bookings-page {
+  margin-left: 270px;
+  min-height: 100vh;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.manage-bookings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin-bottom: 30px;
+
+  padding: 28px 30px;
+
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #fff5fb
+  );
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(90, 45, 90, 0.08);
+
+  border: 1px solid #f1dce9;
+}
+
+.manage-bookings-label {
+  margin: 0 0 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #c44583;
+}
+
+.manage-bookings-header h1 {
+  margin: 0;
+
+  font-size: 32px;
+
+  color: #281b2c;
+}
+
+.manage-bookings-subtitle {
+  margin: 8px 0 0;
+
+  color: #7f7182;
+
+  font-size: 15px;
+}
+
+/* =========================
+   COUNT CARD
+========================= */
+
+.booking-count-card {
+  min-width: 180px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 18px 22px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #7b2e69,
+    #d64f8e
+  );
+
+  color: white;
+
+  box-shadow:
+    0 10px 28px rgba(190, 70, 130, 0.25);
+}
+
+.booking-count-card > span {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  font-size: 24px;
+}
+
+.booking-count-card p {
+  margin: 0;
+
+  font-size: 13px;
+
+  opacity: 0.9;
+}
+
+.booking-count-card h2 {
+  margin: 4px 0 0;
+
+  font-size: 27px;
+}
+
+/* =========================
+   TABLE CONTAINER
+========================= */
+
+.bookings-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: white;
+
+  border-radius: 22px;
+
+  border: 1px solid #f0e1ea;
+
+  box-shadow:
+    0 12px 35px rgba(52, 25, 55, 0.08);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.bookings-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 900px;
+}
+
+.bookings-table thead {
+  background: linear-gradient(
+    135deg,
+    #3d1f3d,
+    #6b2f62
+  );
+}
+
+.bookings-table th {
+  padding: 18px 20px;
+
+  text-align: left;
+
+  color: white;
+
+  font-size: 13px;
+
+  letter-spacing: 0.5px;
+}
+
+.bookings-table td {
+  padding: 18px 20px;
+
+  border-bottom: 1px solid #f3e9ef;
+
+  color: #544957;
+
+  font-size: 14px;
+}
+
+.bookings-table tbody tr {
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bookings-table tbody tr:hover {
+  background: #fff8fc;
+}
+
+.bookings-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================
+   CUSTOMER
+========================= */
+
+.customer-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customer-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #f5bad6,
+    #ce5591
+  );
+
+  color: white;
+
+  font-weight: 700;
+
+  font-size: 17px;
+
+  flex-shrink: 0;
+}
+
+.customer-cell strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #382a3a;
+}
+
+.customer-cell span {
+  font-size: 12px;
+
+  color: #9a8b9b;
+}
+
+/* =========================
+   SERVICE
+========================= */
+
+.booking-service {
+  display: inline-block;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  background: #f8e7f0;
+
+  color: #9f356b;
+
+  font-weight: 600;
+
+  font-size: 13px;
+}
+
+/* =========================
+   STATUS SELECT
+========================= */
+
+.booking-status-select {
+  padding: 9px 12px;
+
+  border-radius: 10px;
+
+  border: 1px solid transparent;
+
+  outline: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.status-pending {
+  background: #fff5d9;
+
+  color: #a16900;
+
+  border-color: #f6df96;
+}
+
+.status-confirmed {
+  background: #e4f0ff;
+
+  color: #2967a3;
+
+  border-color: #b9d8f8;
+}
+
+.status-completed {
+  background: #e2f8ec;
+
+  color: #237849;
+
+  border-color: #bde8cf;
+}
+
+.status-cancelled {
+  background: #ffe7e7;
+
+  color: #b13c3c;
+
+  border-color: #f4bebe;
+}
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.booking-delete-btn {
+  border: none;
+
+  padding: 9px 17px;
+
+  border-radius: 9px;
+
+  background: #fff0f2;
+
+  color: #c2374a;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.booking-delete-btn:hover {
+  background: #d83d55;
+
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 15px rgba(216, 61, 85, 0.25);
+}
+
+/* =========================
+   EMPTY / LOADING
+========================= */
+
+.bookings-loading,
+.bookings-empty {
+  padding: 60px 30px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 35px rgba(52, 25, 55, 0.08);
+}
+
+.bookings-loading {
+  color: #9c4b78;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+.empty-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #faeaf2;
+
+  font-size: 30px;
+}
+
+.bookings-empty h2 {
+  margin: 0;
+
+  color: #3d2b3e;
+}
+
+.bookings-empty p {
+  color: #8a7c8c;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .manage-bookings-page {
+    margin-left: 220px;
+
+    padding: 22px;
+  }
+
+  .manage-bookings-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .booking-count-card {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 650px) {
+  .manage-bookings-page {
+    margin-left: 0;
+
+    padding: 15px;
+  }
+
+  .manage-bookings-header {
+    padding: 20px;
+  }
+
+  .manage-bookings-header h1 {
+    font-size: 26px;
+  }
+}
