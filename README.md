@@ -163,3 +163,13 @@ The objective of this project is to provide an easy-to-use online platform where
 ## 👩‍💻 Author
 
 Developed as a React.js project for learning and demonstrating frontend development, API integration, Redux state management, routing, CRUD operations, Git/GitHub, and deployment.
+## 🌐 Live Demo
+
+Frontend:
+YOUR_RENDER_FRONTEND_URL
+
+Backend:
+https://salonbeauty-backend.onrender.com
+## 📌 GitHub Repository
+
+Source code available in this repository.
