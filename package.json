@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server":"json-server data/db.json --port 5000",
+    "start": "json-server data/db.json --port $PORT"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
     "axios": "^1.19.0",
+    "json-server": "^1.0.0-beta.15",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-redux": "^9.3.0",
