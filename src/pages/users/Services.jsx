@@ -1,3 +1,4 @@
+// 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +10,10 @@ import "./styles/Services.css";
 function Services() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  // =========================
+  // GET DATA FROM REDUX
+  // =========================
 
   const services = useSelector(
     (state) => state.services.items
@@ -22,13 +27,25 @@ function Services() {
     (state) => state.services.error
   );
 
+  // =========================
+  // STATE
+  // =========================
+
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] =
     useState("All");
 
+  // =========================
+  // LOAD SERVICES
+  // =========================
+
   useEffect(() => {
     dispatch(fetchServices());
   }, [dispatch]);
+
+  // =========================
+  // CATEGORIES
+  // =========================
 
   const categories = [
     "All",
@@ -36,6 +53,10 @@ function Services() {
       services.map((service) => service.category)
     ),
   ];
+
+  // =========================
+  // FILTER SERVICES
+  // =========================
 
   const filteredServices = services.filter(
     (service) => {
@@ -55,6 +76,10 @@ function Services() {
     }
   );
 
+  // =========================
+  // BOOK NOW
+  // =========================
+
   const handleBookNow = (service) => {
     navigate("/booking", {
       state: {
@@ -63,47 +88,88 @@ function Services() {
     });
   };
 
+  // =========================
+  // LOADING
+  // =========================
+
   if (loading) {
     return (
-      <div className="services-message">
+      <div className="services-loading">
+
+        <div className="loading-spinner"></div>
+
         <h2>Loading Services...</h2>
+
+        <p>
+          Please wait while we load our beauty services.
+        </p>
+
       </div>
     );
   }
+
+  // =========================
+  // ERROR
+  // =========================
 
   if (error) {
     return (
-      <div className="services-message">
+      <div className="services-error">
+
         <h2>Unable to load services</h2>
+
         <p>{error}</p>
+
+        <button
+          onClick={() => dispatch(fetchServices())}
+          className="retry-btn"
+        >
+          Try Again
+        </button>
+
       </div>
     );
   }
 
+  // =========================
+  // MAIN PAGE
+  // =========================
+
   return (
     <section className="services-page">
+
       <div className="services-container">
 
-        {/* HEADING */}
+        {/* =====================
+            HEADING
+        ===================== */}
 
         <div className="services-heading">
+
           <p className="services-small-title">
             BEAUTY & CARE
           </p>
 
-          <h1>Our Beauty Services</h1>
+          <h1>
+            Our Beauty Services
+          </h1>
 
           <p className="services-subtitle">
             Discover professional salon and beauty
             services designed to make you look and
             feel your best.
           </p>
+
         </div>
 
-        {/* SEARCH */}
+        {/* =====================
+            SEARCH
+        ===================== */}
 
         <div className="services-toolbar">
+
           <div className="services-search-box">
+
             <span>🔍</span>
 
             <input
@@ -114,13 +180,19 @@ function Services() {
                 setSearch(e.target.value)
               }
             />
+
           </div>
+
         </div>
 
-        {/* CATEGORY BUTTONS */}
+        {/* =====================
+            CATEGORY BUTTONS
+        ===================== */}
 
         <div className="category-buttons">
+
           {categories.map((category) => (
+
             <button
               key={category}
               className={
@@ -134,27 +206,44 @@ function Services() {
             >
               {category}
             </button>
+
           ))}
+
         </div>
 
-        {/* SERVICES */}
+        {/* =====================
+            SERVICES
+        ===================== */}
 
         {filteredServices.length === 0 ? (
+
           <div className="services-message">
-            <h3>No services found</h3>
+
+            <h3>
+              No services found
+            </h3>
 
             <p>
               Try another service or category.
             </p>
+
           </div>
+
         ) : (
+
           <div className="services-grid">
+
             {filteredServices.map((service) => (
+
               <div
                 className="service-card"
                 key={service.id}
               >
+
+                {/* SERVICE IMAGE */}
+
                 <div className="service-image-wrapper">
+
                   <img
                     src={service.image}
                     alt={service.name}
@@ -168,16 +257,25 @@ function Services() {
                   <span className="service-price-badge">
                     ₹{service.price}
                   </span>
+
                 </div>
 
+                {/* SERVICE CONTENT */}
+
                 <div className="service-content">
-                  <h3>{service.name}</h3>
+
+                  <h3>
+                    {service.name}
+                  </h3>
 
                   <p className="service-description">
                     {service.description}
                   </p>
 
+                  {/* DETAILS */}
+
                   <div className="service-details">
+
                     <span>
                       ⏱ {service.duration}
                     </span>
@@ -185,10 +283,15 @@ function Services() {
                     <span>
                       ⭐ 4.8
                     </span>
+
                   </div>
 
+                  {/* BOTTOM */}
+
                   <div className="service-bottom">
+
                     <div>
+
                       <small>
                         Starting from
                       </small>
@@ -196,6 +299,7 @@ function Services() {
                       <h4>
                         ₹{service.price}
                       </h4>
+
                     </div>
 
                     <button
@@ -206,14 +310,21 @@ function Services() {
                     >
                       Book Now
                     </button>
+
                   </div>
+
                 </div>
+
               </div>
+
             ))}
+
           </div>
+
         )}
 
       </div>
+
     </section>
   );
 }

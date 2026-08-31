@@ -1,7 +1,7 @@
 {
   "services": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Hair Cut",
       "category": "Hair",
       "price": 500,
@@ -10,7 +10,7 @@
       "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Hair Spa",
       "category": "Hair",
       "price": 1200,
@@ -19,7 +19,7 @@
       "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Hair Styling",
       "category": "Hair",
       "price": 900,
@@ -28,7 +28,7 @@
       "image": "https://images.unsplash.com/photo-1522336572468-97b06e8ef143?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Hair Coloring",
       "category": "Hair",
       "price": 1800,
@@ -37,7 +37,7 @@
       "image": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Keratin Hair Treatment",
       "category": "Hair",
       "price": 3000,
@@ -46,7 +46,7 @@
       "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Vitamin C Facial",
       "category": "Face",
       "price": 1400,
@@ -55,7 +55,7 @@
       "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Hydrating Facial",
       "category": "Face",
       "price": 1500,
@@ -64,7 +64,7 @@
       "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Face Massage",
       "category": "Face",
       "price": 900,
@@ -73,7 +73,7 @@
       "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Face Cleanup",
       "category": "Face",
       "price": 700,
@@ -82,7 +82,7 @@
       "image": "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Eye Makeup",
       "category": "Face",
       "price": 250,
@@ -91,7 +91,7 @@
       "image": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Bridal Makeup",
       "category": "Makeup",
       "price": 5000,
@@ -100,7 +100,7 @@
       "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Party Makeup",
       "category": "Makeup",
       "price": 2500,
@@ -109,7 +109,7 @@
       "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Natural Makeup",
       "category": "Makeup",
       "price": 1800,
@@ -118,7 +118,7 @@
       "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Manicure",
       "category": "Nails",
       "price": 600,
@@ -127,7 +127,7 @@
       "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Gel Nail Art",
       "category": "Nails",
       "price": 1200,
@@ -136,7 +136,7 @@
       "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Acrylic Nail Extensions",
       "category": "Nails",
       "price": 2200,
@@ -145,7 +145,7 @@
       "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "French Manicure",
       "category": "Nails",
       "price": 900,
@@ -154,7 +154,7 @@
       "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Luxury Pedicure",
       "category": "Nails",
       "price": 1300,
@@ -163,7 +163,7 @@
       "image": "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Glitter Nail Art",
       "category": "Nails",
       "price": 1100,
@@ -172,7 +172,7 @@
       "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Bridal Nail Art",
       "category": "Nails",
       "price": 1800,
@@ -181,121 +181,158 @@
       "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85"
     },
     {
-  "id": 21,
-  "name": "Hair Wash & Blow Dry",
-  "category": "Hair",
-  "price": 700,
-  "duration": "45 mins",
-  "description": "Enjoy a refreshing hair wash followed by professional blow drying for smooth and beautifully styled hair.",
-  "image": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 22,
-  "name": "Hair Straightening",
-  "category": "Hair",
-  "price": 2500,
-  "duration": "120 mins",
-  "description": "Achieve smooth and beautifully straight hair with professional salon styling and care.",
-  "image": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 23,
-  "name": "Deep Cleansing Facial",
-  "category": "Face",
-  "price": 1200,
-  "duration": "60 mins",
-  "description": "Deeply cleanse and refresh your skin with professional facial care designed to remove surface impurities.",
-  "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 24,
-  "name": "Gold Facial",
-  "category": "Face",
-  "price": 1800,
-  "duration": "75 mins",
-  "description": "Pamper your skin with a luxurious facial experience designed to leave your complexion fresh and radiant.",
-  "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 25,
-  "name": "Detan Face Treatment",
-  "category": "Face",
-  "price": 1100,
-  "duration": "50 mins",
-  "description": "Refresh dull-looking skin with a professional detan face treatment for a cleaner and brighter appearance.",
-  "image": "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 26,
-  "name": "Engagement Makeup",
-  "category": "Makeup",
-  "price": 3500,
-  "duration": "90 mins",
-  "description": "Get a beautiful and elegant professional makeup look specially created for your engagement celebration.",
-  "image": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 27,
-  "name": "HD Makeup",
-  "category": "Makeup",
-  "price": 4000,
-  "duration": "100 mins",
-  "description": "Professional HD makeup designed to provide a smooth, elegant and camera-ready finish.",
-  "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 28,
-  "name": "Chrome Nail Art",
-  "category": "Nails",
-  "price": 1400,
-  "duration": "70 mins",
-  "description": "Modern chrome nail art featuring a beautiful metallic finish for a stylish and fashionable appearance.",
-  "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 29,
-  "name": "Ombre Nail Art",
-  "category": "Nails",
-  "price": 1500,
-  "duration": "75 mins",
-  "description": "Beautiful ombre nail art featuring smoothly blended colors for an elegant and modern finish.",
-  "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 30,
-  "name": "Spa Manicure",
-  "category": "Nails",
-  "price": 1000,
-  "duration": "60 mins",
-  "description": "Enjoy a relaxing spa manicure with nail shaping, cuticle care, hand care and professional polish.",
-  "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 31,
-  "name": "Nail Extensions",
-  "category": "Nails",
-  "price": 1900,
-  "duration": "90 mins",
-  "description": "Enhance your natural nails with stylish extensions customized to your preferred shape, length and finish.",
-  "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 32,
-  "name": "Brightening Face Treatment",
-  "category": "Face",
-  "price": 1600,
-  "duration": "60 mins",
-  "description": "Refresh and brighten dull-looking skin with a professional face treatment designed for a smooth and radiant appearance.",
-  "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85"
-},
-{
-  "id": 33,
-  "name": "Luxury Gel Nail Extensions",
-  "category": "Nails",
-  "price": 2400,
-  "duration": "100 mins",
-  "description": "Get stylish gel nail extensions customized with beautiful shapes, colors and elegant nail art for a premium finish.",
-  "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85"
-}
-  ]
+      "id": "21",
+      "name": "Hair Wash & Blow Dry",
+      "category": "Hair",
+      "price": 700,
+      "duration": "45 mins",
+      "description": "Enjoy a refreshing hair wash followed by professional blow drying for smooth and beautifully styled hair.",
+      "image": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "22",
+      "name": "Hair Straightening",
+      "category": "Hair",
+      "price": 2500,
+      "duration": "120 mins",
+      "description": "Achieve smooth and beautifully straight hair with professional salon styling and care.",
+      "image": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "23",
+      "name": "Deep Cleansing Facial",
+      "category": "Face",
+      "price": 1200,
+      "duration": "60 mins",
+      "description": "Deeply cleanse and refresh your skin with professional facial care designed to remove surface impurities.",
+      "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "24",
+      "name": "Gold Facial",
+      "category": "Face",
+      "price": 1800,
+      "duration": "75 mins",
+      "description": "Pamper your skin with a luxurious facial experience designed to leave your complexion fresh and radiant.",
+      "image": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "25",
+      "name": "Detan Face Treatment",
+      "category": "Face",
+      "price": 1100,
+      "duration": "50 mins",
+      "description": "Refresh dull-looking skin with a professional detan face treatment for a cleaner and brighter appearance.",
+      "image": "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "26",
+      "name": "Engagement Makeup",
+      "category": "Makeup",
+      "price": 3500,
+      "duration": "90 mins",
+      "description": "Get a beautiful and elegant professional makeup look specially created for your engagement celebration.",
+      "image": "https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "27",
+      "name": "HD Makeup",
+      "category": "Makeup",
+      "price": 4000,
+      "duration": "100 mins",
+      "description": "Professional HD makeup designed to provide a smooth, elegant and camera-ready finish.",
+      "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "28",
+      "name": "Chrome Nail Art",
+      "category": "Nails",
+      "price": 1400,
+      "duration": "70 mins",
+      "description": "Modern chrome nail art featuring a beautiful metallic finish for a stylish and fashionable appearance.",
+      "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "29",
+      "name": "Ombre Nail Art",
+      "category": "Nails",
+      "price": 1500,
+      "duration": "75 mins",
+      "description": "Beautiful ombre nail art featuring smoothly blended colors for an elegant and modern finish.",
+      "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "30",
+      "name": "Spa Manicure",
+      "category": "Nails",
+      "price": 1000,
+      "duration": "60 mins",
+      "description": "Enjoy a relaxing spa manicure with nail shaping, cuticle care, hand care and professional polish.",
+      "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "31",
+      "name": "Nail Extensions",
+      "category": "Nails",
+      "price": 1900,
+      "duration": "90 mins",
+      "description": "Enhance your natural nails with stylish extensions customized to your preferred shape, length and finish.",
+      "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "32",
+      "name": "Brightening Face Treatment",
+      "category": "Face",
+      "price": 1600,
+      "duration": "60 mins",
+      "description": "Refresh and brighten dull-looking skin with a professional face treatment designed for a smooth and radiant appearance.",
+      "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85"
+    },
+    {
+      "id": "33",
+      "name": "Luxury Gel Nail Extensions",
+      "category": "Nails",
+      "price": 2400,
+      "duration": "100 mins",
+      "description": "Get stylish gel nail extensions customized with beautiful shapes, colors and elegant nail art for a premium finish.",
+      "image": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85"
+    }
+  ],
+  "users": [],
+  "bookings": [],
+  "professionals": [],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Hair",
+      "description": "Hair cutting, styling, coloring and hair care services"
+    },
+    {
+      "id": "2",
+      "name": "Face",
+      "description": "Facial, cleanup and professional face care services"
+    },
+    {
+      "id": "3",
+      "name": "Makeup",
+      "description": "Bridal, party, engagement and professional makeup services"
+    },
+    {
+      "id": "4",
+      "name": "Nails",
+      "description": "Manicure, pedicure, nail art and nail extension services"
+    },
+    {
+      "name": "Hair care",
+      "id": "kxkMRE8IvM8"
+    },
+    {
+      "name": "haircare",
+      "id": "-XhzSbAzeDU"
+    }
+  ],
+  "offers": [],
+  "payments": [],
+  "reviews": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
