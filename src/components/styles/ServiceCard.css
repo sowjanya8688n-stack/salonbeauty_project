@@ -1,164 +1,457 @@
+/* =====================================
+   SERVICE CARD
+===================================== */
+
 .service-card {
+  width: 100%;
+
   background: #ffffff;
-  border-radius: 18px;
+
+  border-radius: 22px;
+
   overflow: hidden;
 
-  box-shadow:
-    0 6px 25px
-    rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(217, 113, 166, 0.16);
 
-  transition: 0.3s ease;
+  box-shadow:
+    0 12px 35px rgba(84, 30, 62, 0.1);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
+
 
 .service-card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-10px);
 
   box-shadow:
-    0 12px 30px
-    rgba(0, 0, 0, 0.13);
+    0 22px 50px rgba(84, 30, 62, 0.18);
 }
 
 
-/* IMAGE */
+/* =====================================
+   IMAGE SECTION
+===================================== */
 
-.service-image-container {
+.service-image-box {
   position: relative;
 
   width: 100%;
+
   height: 240px;
 
   overflow: hidden;
+
+  background: #f8edf3;
 }
+
 
 .service-image {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
 
-  display: block;
-
-  transition: 0.4s;
+  transition:
+    transform 0.6s ease,
+    filter 0.5s ease;
 }
+
 
 .service-card:hover .service-image {
-  transform: scale(1.05);
+  transform: scale(1.08);
+
+  filter: brightness(1.04);
 }
 
 
-/* DURATION */
+/* dark bottom overlay */
+
+.service-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(60, 18, 43, 0.28),
+      transparent 55%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =====================================
+   CATEGORY BADGE
+===================================== */
+
+.service-category {
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  z-index: 3;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  color: #a31b66;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  backdrop-filter: blur(10px);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 6px 18px rgba(62, 20, 45, 0.12);
+}
+
+
+/* =====================================
+   DURATION BADGE
+===================================== */
 
 .service-duration {
   position: absolute;
 
-  top: 15px;
-  right: 15px;
+  left: 16px;
+  bottom: 16px;
 
-  background: white;
-
-  color: #333;
+  z-index: 3;
 
   padding: 7px 12px;
 
-  border-radius: 20px;
+  border-radius: 10px;
+
+  color: white;
+
+  background:
+    rgba(68, 24, 49, 0.72);
+
+  backdrop-filter: blur(8px);
 
   font-size: 12px;
 
   font-weight: 600;
-
-  box-shadow:
-    0 3px 10px
-    rgba(0, 0, 0, 0.1);
 }
 
 
-/* INFORMATION */
+/* =====================================
+   FAVORITE BUTTON
+===================================== */
 
-.service-info {
-  padding: 22px;
-}
+.service-favorite-btn {
+  position: absolute;
 
-.service-info h3 {
-  margin: 0 0 10px;
+  top: 14px;
+  right: 14px;
 
-  font-size: 22px;
+  z-index: 3;
 
-  color: #252525;
-}
+  width: 40px;
+  height: 40px;
 
-.service-description {
-  color: #777;
-
-  font-size: 14px;
-
-  line-height: 1.6;
-
-  min-height: 68px;
-}
-
-
-/* BOTTOM */
-
-.service-bottom {
   display: flex;
-
-  justify-content: space-between;
 
   align-items: center;
 
-  gap: 15px;
+  justify-content: center;
 
-  margin-top: 20px;
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.94);
+
+  color: #c72070;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 18px rgba(67, 21, 48, 0.12);
+
+  transition: all 0.3s ease;
 }
 
-.starting-text {
-  display: block;
 
-  color: #999;
+.service-favorite-btn:hover {
+  color: white;
+
+  background: #c92070;
+
+  transform: scale(1.1);
+}
+
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.service-content {
+  padding: 22px;
+}
+
+
+/* =====================================
+   TITLE ROW
+===================================== */
+
+.service-title-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+
+.service-title-row h3 {
+  margin: 0;
+
+  color: #3f2233;
+
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+
+/* =====================================
+   RATING
+===================================== */
+
+.service-rating {
+  flex-shrink: 0;
+
+  padding: 6px 10px;
+
+  border-radius: 9px;
+
+  background: #fff7df;
+
+  color: #8a5d04;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================
+   DESCRIPTION
+===================================== */
+
+.service-description {
+  margin: 13px 0 0;
+
+  color: #806976;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  min-height: 48px;
+}
+
+
+/* =====================================
+   DIVIDER
+===================================== */
+
+.service-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 20px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #efd4e1,
+      transparent
+    );
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.service-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+
+/* =====================================
+   PRICE
+===================================== */
+
+.service-price-box {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.service-price-box span {
+  color: #9b8591;
 
   font-size: 11px;
 
-  margin-bottom: 3px;
-}
-
-.service-price {
-  margin: 0;
-
-  color: #e83e8c;
-
-  font-size: 21px;
+  font-weight: 500;
 }
 
 
-/* BUTTON */
+.service-price-box strong {
+  color: #b81f6b;
 
-.book-service-btn {
+  font-size: 23px;
+
+  font-weight: 800;
+}
+
+
+/* =====================================
+   BOOK BUTTON
+===================================== */
+
+.service-book-btn {
   border: none;
+
+  outline: none;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  border-radius: 11px;
+
+  color: white;
 
   background:
     linear-gradient(
       135deg,
-      #e83e8c,
-      #ff6daa
+      #d52578,
+      #921a61
     );
-
-  color: white;
-
-  padding: 11px 20px;
-
-  border-radius: 25px;
 
   font-size: 13px;
 
+  font-weight: 700;
+
   cursor: pointer;
 
-  transition: 0.3s;
+  box-shadow:
+    0 8px 22px rgba(192, 35, 111, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.book-service-btn:hover {
-  transform: translateY(-2px);
+
+.service-book-btn span {
+  font-size: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.service-book-btn:hover {
+  transform: translateY(-3px);
 
   box-shadow:
-    0 5px 15px
-    rgba(232, 62, 140, 0.3);
+    0 12px 28px rgba(192, 35, 111, 0.35);
+}
+
+
+.service-book-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .service-image-box {
+    height: 220px;
+  }
+
+
+  .service-content {
+    padding: 18px;
+  }
+
+
+  .service-title-row h3 {
+    font-size: 19px;
+  }
+
+
+  .service-footer {
+    align-items: flex-end;
+  }
+
+
+  .service-book-btn {
+    padding: 11px 16px;
+  }
+
+
+  .service-price-box strong {
+    font-size: 21px;
+  }
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 420px) {
+
+  .service-footer {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .service-book-btn {
+    width: 100%;
+  }
 }
