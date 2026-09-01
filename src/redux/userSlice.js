@@ -1,9 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import api from "../api/axios";
 
-// ===============================
 // FETCH USERS
-// ===============================
 
 export const fetchUsers = createAsyncThunk(
   "user/fetchUsers",
@@ -13,9 +11,7 @@ export const fetchUsers = createAsyncThunk(
   }
 );
 
-// ===============================
 // DELETE USER
-// ===============================
 
 export const deleteUser = createAsyncThunk(
   "user/deleteUser",
@@ -25,9 +21,7 @@ export const deleteUser = createAsyncThunk(
   }
 );
 
-// ===============================
 // USER SLICE
-// ===============================
 
 const savedUser =
   localStorage.getItem("salonbeauty_user");

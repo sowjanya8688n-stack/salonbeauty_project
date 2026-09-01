@@ -12,7 +12,7 @@ function Services() {
   const navigate = useNavigate();
 
   // =========================
-  // GET DATA FROM REDUX
+  // REDUX DATA
   // =========================
 
   const services = useSelector(
@@ -32,8 +32,11 @@ function Services() {
   // =========================
 
   const [search, setSearch] = useState("");
+
   const [selectedCategory, setSelectedCategory] =
     useState("All");
+
+  const [wishlist, setWishlist] = useState([]);
 
   // =========================
   // LOAD SERVICES
@@ -42,6 +45,17 @@ function Services() {
   useEffect(() => {
     dispatch(fetchServices());
   }, [dispatch]);
+
+  // =========================
+  // LOAD WISHLIST
+  // =========================
+
+  useEffect(() => {
+    const savedWishlist =
+      JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    setWishlist(savedWishlist);
+  }, []);
 
   // =========================
   // CATEGORIES
@@ -60,13 +74,18 @@ function Services() {
 
   const filteredServices = services.filter(
     (service) => {
+      const serviceName =
+        service.name?.toLowerCase() || "";
+
+      const serviceCategory =
+        service.category?.toLowerCase() || "";
+
+      const searchValue =
+        search.toLowerCase();
+
       const matchesSearch =
-        service.name
-          .toLowerCase()
-          .includes(search.toLowerCase()) ||
-        service.category
-          .toLowerCase()
-          .includes(search.toLowerCase());
+        serviceName.includes(searchValue) ||
+        serviceCategory.includes(searchValue);
 
       const matchesCategory =
         selectedCategory === "All" ||
@@ -89,21 +108,68 @@ function Services() {
   };
 
   // =========================
+  // CHECK WISHLIST
+  // =========================
+
+  const isWishlisted = (serviceId) => {
+    return wishlist.some(
+      (item) => item.id === serviceId
+    );
+  };
+
+  // =========================
+  // ADD / REMOVE WISHLIST
+  // =========================
+
+  const toggleWishlist = (service) => {
+    const alreadyAdded = wishlist.some(
+      (item) => item.id === service.id
+    );
+
+    let updatedWishlist;
+
+    if (alreadyAdded) {
+      updatedWishlist = wishlist.filter(
+        (item) => item.id !== service.id
+      );
+    } else {
+      updatedWishlist = [
+        ...wishlist,
+        service,
+      ];
+    }
+
+    setWishlist(updatedWishlist);
+
+    localStorage.setItem(
+      "wishlist",
+      JSON.stringify(updatedWishlist)
+    );
+  };
+
+  // =========================
+  // OPEN WISHLIST
+  // =========================
+
+  const openWishlist = () => {
+    navigate("/wishlist");
+  };
+
+  // =========================
   // LOADING
   // =========================
 
   if (loading) {
     return (
       <div className="services-loading">
-
         <div className="loading-spinner"></div>
 
         <h2>Loading Services...</h2>
 
         <p>
-          Please wait while we load our beauty services.
+          Please wait while we load our beauty
+          services.
         </p>
-
       </div>
     );
   }
@@ -115,34 +181,29 @@ function Services() {
   if (error) {
     return (
       <div className="services-error">
-
-        <h2>Unable to load services</h2>
+        <h2>
+          Unable to load services
+        </h2>
 
         <p>{error}</p>
 
         <button
-          onClick={() => dispatch(fetchServices())}
+          onClick={() =>
+            dispatch(fetchServices())
+          }
           className="retry-btn"
         >
           Try Again
         </button>
-
       </div>
     );
   }
 
-  // =========================
-  // MAIN PAGE
-  // =========================
-
   return (
     <section className="services-page">
-
       <div className="services-container">
 
-        {/* =====================
-            HEADING
-        ===================== */}
+        {/* HEADER */}
 
         <div className="services-heading">
 
@@ -162,15 +223,15 @@ function Services() {
 
         </div>
 
-        {/* =====================
-            SEARCH
-        ===================== */}
+        {/* SEARCH + WISHLIST */}
 
         <div className="services-toolbar">
 
           <div className="services-search-box">
 
-            <span>🔍</span>
+            <span className="search-icon">
+              🔍
+            </span>
 
             <input
               type="text"
@@ -183,11 +244,20 @@ function Services() {
 
           </div>
 
+          <button
+            className="view-wishlist-btn"
+            onClick={openWishlist}
+          >
+            ❤️ My Wishlist
+
+            <span className="wishlist-count">
+              {wishlist.length}
+            </span>
+          </button>
+
         </div>
 
-        {/* =====================
-            CATEGORY BUTTONS
-        ===================== */}
+        {/* CATEGORY BUTTONS */}
 
         <div className="category-buttons">
 
@@ -211,9 +281,7 @@ function Services() {
 
         </div>
 
-        {/* =====================
-            SERVICES
-        ===================== */}
+        {/* SERVICES */}
 
         {filteredServices.length === 0 ? (
 
@@ -233,64 +301,90 @@ function Services() {
 
           <div className="services-grid">
 
-            {filteredServices.map((service) => (
+            {filteredServices.map(
+              (service) => (
 
-              <div
-                className="service-card"
-                key={service.id}
-              >
+                <div
+                  className="service-card"
+                  key={service.id}
+                >
 
-                {/* SERVICE IMAGE */}
+                  {/* IMAGE */}
 
-                <div className="service-image-wrapper">
+                  <div className="service-image-wrapper">
 
-                  <img
-                    src={service.image}
-                    alt={service.name}
-                    className="service-image"
-                  />
+                    <img
+                      src={service.image}
+                      alt={service.name}
+                      className="service-image"
+                    />
 
-                  <span className="service-category">
-                    {service.category}
-                  </span>
-
-                  <span className="service-price-badge">
-                    ₹{service.price}
-                  </span>
-
-                </div>
-
-                {/* SERVICE CONTENT */}
-
-                <div className="service-content">
-
-                  <h3>
-                    {service.name}
-                  </h3>
-
-                  <p className="service-description">
-                    {service.description}
-                  </p>
-
-                  {/* DETAILS */}
-
-                  <div className="service-details">
-
-                    <span>
-                      ⏱ {service.duration}
+                    <span className="service-category">
+                      {service.category}
                     </span>
 
-                    <span>
-                      ⭐ 4.8
+                    <span className="service-price-badge">
+                      ₹{service.price}
                     </span>
+
+                    {/* HEART BUTTON */}
+
+                    <button
+                      type="button"
+                      className={
+                        isWishlisted(service.id)
+                          ? "heart-btn heart-active"
+                          : "heart-btn"
+                      }
+                      onClick={(e) => {
+                        e.stopPropagation();
+
+                        toggleWishlist(
+                          service
+                        );
+                      }}
+                      title={
+                        isWishlisted(service.id)
+                          ? "Remove from wishlist"
+                          : "Add to wishlist"
+                      }
+                    >
+                      {isWishlisted(service.id)
+                        ? "♥"
+                        : "♡"}
+                    </button>
 
                   </div>
 
-                  {/* BOTTOM */}
+                  {/* CONTENT */}
 
-                  <div className="service-bottom">
+                  <div className="service-content">
 
-                    <div>
+                    <h3>
+                      {service.name}
+                    </h3>
+
+                    <p className="service-description">
+                      {service.description}
+                    </p>
+
+                    {/* DETAILS */}
+
+                    <div className="service-details">
+
+                      <span>
+                        ⏱ {service.duration}
+                      </span>
+
+                      <span>
+                        ⭐ 4.8
+                      </span>
+
+                    </div>
+
+                    {/* PRICE */}
+
+                    <div className="service-price-section">
 
                       <small>
                         Starting from
@@ -302,29 +396,56 @@ function Services() {
 
                     </div>
 
-                    <button
-                      className="book-now-btn"
-                      onClick={() =>
-                        handleBookNow(service)
-                      }
-                    >
-                      Book Now
-                    </button>
+                    {/* BUTTONS */}
+
+                    <div className="service-actions">
+
+                      <button
+                        type="button"
+                        className={
+                          isWishlisted(service.id)
+                            ? "wishlist-btn wishlist-added"
+                            : "wishlist-btn"
+                        }
+                        onClick={(e) => {
+                          e.stopPropagation();
+
+                          toggleWishlist(
+                            service
+                          );
+                        }}
+                      >
+                        {isWishlisted(service.id)
+                          ? "♥ Wishlisted"
+                          : "♡ Wishlist"}
+                      </button>
+
+                      <button
+                        type="button"
+                        className="book-now-btn"
+                        onClick={() =>
+                          handleBookNow(
+                            service
+                          )
+                        }
+                      >
+                        Book Now
+                      </button>
+
+                    </div>
 
                   </div>
 
                 </div>
 
-              </div>
-
-            ))}
+              )
+            )}
 
           </div>
 
         )}
 
       </div>
-
     </section>
   );
 }

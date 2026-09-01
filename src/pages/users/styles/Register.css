@@ -1,6 +1,4 @@
-/* ==============================
-   REGISTER PAGE
-============================== */
+   /* REGISTER PAGE */
 
 .auth-page {
   min-height: 100vh;
@@ -31,9 +29,7 @@
   box-sizing: border-box;
 }
 
-/* ==============================
-   FORM CARD
-============================== */
+   /* FORM CARD */
 
 .auth-box {
   width: 100%;
@@ -89,9 +85,7 @@
     );
 }
 
-/* ==============================
-   TITLE
-============================== */
+   /* TITLE */
 
 .auth-box h1 {
   margin: 0;
@@ -115,9 +109,7 @@
   font-size: 14px;
 }
 
-/* ==============================
-   FORM
-============================== */
+   /* FORM */
 
 .auth-box form {
   display: flex;
@@ -127,9 +119,7 @@
   gap: 16px;
 }
 
-/* ==============================
-   INPUTS
-============================== */
+   /* INPUTS */
 
 .auth-box input {
   width: 100%;
@@ -177,9 +167,7 @@
   transform: translateY(-1px);
 }
 
-/* ==============================
-   REGISTER BUTTON
-============================== */
+   /* REGISTER BUTTON */
 
 .auth-box .btn {
   width: 100%;
@@ -233,9 +221,7 @@
     translateY(0);
 }
 
-/* ==============================
-   LOGIN LINK
-============================== */
+   /* LOGIN LINK */
 
 .auth-link {
   margin:
@@ -267,9 +253,7 @@
   text-decoration: underline;
 }
 
-/* ==============================
-   HOVER CARD
-============================== */
+   /* HOVER CARD */
 
 .auth-box {
   transition:
@@ -286,9 +270,7 @@
     rgba(84, 42, 74, 0.16);
 }
 
-/* ==============================
-   RESPONSIVE
-============================== */
+   /* RESPONSIVE */
 
 @media (max-width: 600px) {
 

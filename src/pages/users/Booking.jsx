@@ -1,3 +1,4 @@
+// 
 import { useState } from "react";
 import {
   useLocation,
@@ -24,9 +25,11 @@ function Booking() {
   });
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   };
 
@@ -39,9 +42,56 @@ function Booking() {
       return;
     }
 
+    // Name validation
+    if (formData.name.trim().length < 3) {
+      alert("Please enter a valid full name.");
+      return;
+    }
+
+    // Email validation
+    const emailRegex =
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    // Phone validation
+    const phoneRegex = /^[6-9]\d{9}$/;
+
+    if (!phoneRegex.test(formData.phone)) {
+      alert(
+        "Please enter a valid 10 digit mobile number."
+      );
+      return;
+    }
+
+    // Date validation
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const selectedDate = new Date(
+      formData.date + "T00:00:00"
+    );
+
+    if (selectedDate < today) {
+      alert(
+        "Past dates are not allowed."
+      );
+      return;
+    }
+
+    if (!formData.time) {
+      alert(
+        "Please select appointment time."
+      );
+      return;
+    }
+
     const bookingData = {
-      customerName: formData.name,
-      email: formData.email,
+      customerName: formData.name.trim(),
+      email: formData.email.trim(),
       phone: formData.phone,
 
       serviceId: selectedService.id,
@@ -61,7 +111,18 @@ function Booking() {
         bookingData
       );
 
-      alert("Appointment booked successfully!");
+      alert(
+        "Appointment booked successfully!"
+      );
+
+      // Clear form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        date: "",
+        time: "",
+      });
 
       navigate("/my-bookings");
     } catch (error) {
@@ -70,18 +131,25 @@ function Booking() {
         error
       );
 
-      alert("Unable to book appointment.");
+      alert(
+        "Unable to book appointment."
+      );
     }
   };
 
+  const todayDate =
+    new Date()
+      .toISOString()
+      .split("T")[0];
+
   return (
     <section className="booking-page">
-
       <div className="booking-container">
 
         <div className="booking-header">
-
-          <p>BOOK YOUR APPOINTMENT</p>
+          <p>
+            BOOK YOUR APPOINTMENT
+          </p>
 
           <h1>
             Beauty Appointment
@@ -90,7 +158,6 @@ function Booking() {
           <span>
             Select your date and time.
           </span>
-
         </div>
 
         <div className="booking-card">
@@ -130,6 +197,7 @@ function Booking() {
               </p>
 
               <button
+                type="button"
                 onClick={() =>
                   navigate("/services")
                 }
@@ -143,7 +211,6 @@ function Booking() {
           <form onSubmit={handleSubmit}>
 
             <div className="booking-form-group">
-
               <label>
                 Full Name
               </label>
@@ -154,13 +221,12 @@ function Booking() {
                 placeholder="Enter your name"
                 value={formData.name}
                 onChange={handleChange}
+                minLength="3"
                 required
               />
-
             </div>
 
             <div className="booking-form-group">
-
               <label>
                 Email
               </label>
@@ -173,11 +239,9 @@ function Booking() {
                 onChange={handleChange}
                 required
               />
-
             </div>
 
             <div className="booking-form-group">
-
               <label>
                 Phone Number
               </label>
@@ -185,16 +249,16 @@ function Booking() {
               <input
                 type="tel"
                 name="phone"
-                placeholder="Enter phone number"
+                placeholder="Enter 10 digit mobile number"
                 value={formData.phone}
                 onChange={handleChange}
+                maxLength="10"
+                pattern="[6-9][0-9]{9}"
                 required
               />
-
             </div>
 
             <div className="booking-form-group">
-
               <label>
                 Appointment Date
               </label>
@@ -204,13 +268,12 @@ function Booking() {
                 name="date"
                 value={formData.date}
                 onChange={handleChange}
+                min={todayDate}
                 required
               />
-
             </div>
 
             <div className="booking-form-group">
-
               <label>
                 Appointment Time
               </label>
@@ -222,12 +285,12 @@ function Booking() {
                 onChange={handleChange}
                 required
               />
-
             </div>
 
             <button
               className="booking-submit-btn"
               type="submit"
+              disabled={!selectedService}
             >
               Confirm Appointment
             </button>
@@ -235,9 +298,7 @@ function Booking() {
           </form>
 
         </div>
-
       </div>
-
     </section>
   );
 }

@@ -1,6 +1,4 @@
-/* =========================
-   MAIN PAGE
-========================= */
+   /* MAIN PAGE */
 
 .admin-page {
   margin-left: 260px;
@@ -18,9 +16,7 @@
   box-sizing: border-box;
 }
 
-/* =========================
-   PAGE HEADER
-========================= */
+   /* PAGE HEADER */
 
 .admin-page-header {
   background: rgba(255, 255, 255, 0.95);
@@ -84,9 +80,7 @@
   font-size: 15px;
 }
 
-/* =========================
-   TABLE CONTAINER
-========================= */
+   /* TABLE CONTAINER */
 
 .admin-table-container {
   width: 100%;
@@ -105,9 +99,7 @@
   border: 1px solid #f0eaf6;
 }
 
-/* =========================
-   TABLE
-========================= */
+   /* TABLE */
 
 .admin-table {
   width: 100%;
@@ -121,9 +113,7 @@
   overflow: hidden;
 }
 
-/* =========================
-   TABLE HEADER
-========================= */
+   /* TABLE HEADER */
 
 .admin-table thead {
   background:
@@ -150,9 +140,7 @@
   text-transform: uppercase;
 }
 
-/* =========================
-   TABLE BODY
-========================= */
+   /* TABLE BODY */
 
 .admin-table td {
   padding: 18px 20px;
@@ -180,9 +168,7 @@
   background: #fff2f8;
 }
 
-/* =========================
-   CUSTOMER COLUMN
-========================= */
+   /* CUSTOMER COLUMN */
 
 .admin-table td:first-child {
   font-weight: 700;
@@ -190,9 +176,7 @@
   color: #332a44;
 }
 
-/* =========================
-   SERVICE COLUMN
-========================= */
+   /* SERVICE COLUMN */
 
 .admin-table td:nth-child(2) {
   color: #8b4db0;
@@ -200,9 +184,7 @@
   font-weight: 600;
 }
 
-/* =========================
-   RATING COLUMN
-========================= */
+   /* RATING COLUMN */
 
 .admin-table td:nth-child(3) {
   color: #f3a800;
@@ -212,9 +194,7 @@
   white-space: nowrap;
 }
 
-/* =========================
-   REVIEW COLUMN
-========================= */
+   /* REVIEW COLUMN */
 
 .admin-table td:nth-child(4) {
   max-width: 330px;
@@ -224,9 +204,7 @@
   color: #666;
 }
 
-/* =========================
-   DELETE BUTTON
-========================= */
+   /* DELETE BUTTON */
 
 .admin-delete-btn {
   border: none;
@@ -274,9 +252,7 @@
   transform: scale(0.96);
 }
 
-/* =========================
-   EMPTY TABLE
-========================= */
+   /* EMPTY TABLE */
 
 .admin-table tbody:empty::after {
   content: "No customer reviews available.";
@@ -290,9 +266,7 @@
   font-size: 16px;
 }
 
-/* =========================
-   SCROLLBAR
-========================= */
+   /* SCROLLBAR */
 
 .admin-table-container::-webkit-scrollbar {
   height: 8px;
@@ -315,9 +289,7 @@
   border-radius: 10px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+   /* RESPONSIVE */
 
 @media screen and (max-width: 1000px) {
   .admin-page {

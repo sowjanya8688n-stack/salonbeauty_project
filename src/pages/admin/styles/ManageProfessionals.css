@@ -15,9 +15,7 @@
     );
 }
 
-/* ===============================
-   MAIN
-================================ */
+   /* MAIN */
 
 .professionals-page {
   margin-left: 270px;
@@ -158,9 +156,7 @@
   font-size: 30px;
 }
 
-/* ===============================
-   ADD SECTION
-================================ */
+   /* ADD SECTION */
 
 .professional-add-section {
   padding: 28px;
@@ -223,9 +219,7 @@
   font-size: 21px;
 }
 
-/* ===============================
-   FORM
-================================ */
+   /* FORM */
 
 .professional-form {
   display: grid;
@@ -330,9 +324,7 @@
     rgba(190, 60, 125, 0.27);
 }
 
-/* ===============================
-   TOOLBAR
-================================ */
+   /* TOOLBAR */
 
 .professional-toolbar {
   display: flex;
@@ -412,9 +404,7 @@
   background: #fcecf4;
 }
 
-/* ===============================
-   GRID
-================================ */
+   /* GRID */
 
 .professional-cards-grid {
   display: grid;
@@ -428,9 +418,7 @@
   gap: 23px;
 }
 
-/* ===============================
-   CARD
-================================ */
+   /* CARD */
 
 .professional-profile-card {
   overflow: hidden;
@@ -459,9 +447,7 @@
     rgba(80, 35, 85, 0.15);
 }
 
-/* ===============================
-   IMAGE
-================================ */
+   /* IMAGE */
 
 .professional-image-area {
   position: relative;
@@ -533,9 +519,7 @@
     rgba(0, 0, 0, 0.08);
 }
 
-/* ===============================
-   CARD CONTENT
-================================ */
+   /* CARD CONTENT */
 
 .professional-profile-content {
   padding: 21px;
@@ -573,9 +557,7 @@
   font-weight: 700;
 }
 
-/* ===============================
-   DETAILS
-================================ */
+   /* DETAILS */
 
 .professional-details {
   display: grid;
@@ -635,9 +617,7 @@
   font-size: 13px;
 }
 
-/* ===============================
-   DELETE
-================================ */
+   /* DELETE */
 
 .professional-delete-button {
   width: 100%;
@@ -671,9 +651,7 @@
     rgba(218, 62, 87, 0.24);
 }
 
-/* ===============================
-   LOADING / EMPTY
-================================ */
+   /* LOADING / EMPTY */
 
 .professional-state-box {
   padding: 65px 30px;
@@ -724,9 +702,7 @@
   color: #8d7d8f;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+   /* RESPONSIVE */
 
 @media (max-width: 900px) {
   .professionals-page {

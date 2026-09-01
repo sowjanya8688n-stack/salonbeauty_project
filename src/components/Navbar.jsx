@@ -142,6 +142,13 @@ function Navbar() {
           >
             Admin
           </NavLink>
+
+<NavLink to="/wishlist">
+  ❤️ Wishlist
+</NavLink>
+
+
+
 <NavLink
             to="/register"
             className="navbar-register-button"

@@ -10,9 +10,7 @@
   box-sizing: border-box;
 }
 
-/* =========================
-   HEADER
-========================= */
+   /* HEADER */
 
 .manage-bookings-header {
   display: flex;
@@ -65,9 +63,7 @@
   font-size: 15px;
 }
 
-/* =========================
-   COUNT CARD
-========================= */
+   /* COUNT CARD */
 
 .booking-count-card {
   min-width: 180px;
@@ -121,9 +117,7 @@
   font-size: 27px;
 }
 
-/* =========================
-   TABLE CONTAINER
-========================= */
+   /* TABLE CONTAINER */
 
 .bookings-table-wrapper {
   width: 100%;
@@ -140,9 +134,7 @@
     0 12px 35px rgba(52, 25, 55, 0.08);
 }
 
-/* =========================
-   TABLE
-========================= */
+   /* TABLE */
 
 .bookings-table {
   width: 100%;
@@ -196,9 +188,7 @@
   border-bottom: none;
 }
 
-/* =========================
-   CUSTOMER
-========================= */
+   /* CUSTOMER */
 
 .customer-cell {
   display: flex;
@@ -245,9 +235,7 @@
   color: #9a8b9b;
 }
 
-/* =========================
-   SERVICE
-========================= */
+   /* SERVICE */
 
 .booking-service {
   display: inline-block;
@@ -265,9 +253,7 @@
   font-size: 13px;
 }
 
-/* =========================
-   STATUS SELECT
-========================= */
+   /* STATUS SELECT */
 
 .booking-status-select {
   padding: 9px 12px;
@@ -316,9 +302,7 @@
   border-color: #f4bebe;
 }
 
-/* =========================
-   DELETE BUTTON
-========================= */
+   /* DELETE BUTTON */
 
 .booking-delete-btn {
   border: none;
@@ -349,9 +333,7 @@
     0 6px 15px rgba(216, 61, 85, 0.25);
 }
 
-/* =========================
-   EMPTY / LOADING
-========================= */
+   /* EMPTY / LOADING */
 
 .bookings-loading,
 .bookings-empty {
@@ -402,9 +384,7 @@
   color: #8a7c8c;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+   /* RESPONSIVE */
 
 @media (max-width: 900px) {
   .manage-bookings-page {

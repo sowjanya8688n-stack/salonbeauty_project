@@ -1,315 +1,308 @@
-/* =========================================
+/* ==============================
    SERVICES PAGE
-========================================= */
+============================== */
 
 .services-page {
   min-height: 100vh;
-  padding: 70px 20px 90px;
+  padding: 70px 20px;
   background:
-    radial-gradient(circle at top left, #fff0f6 0%, transparent 35%),
-    radial-gradient(circle at bottom right, #fce7f3 0%, transparent 30%),
-    linear-gradient(135deg, #fffafd 0%, #fff5f9 50%, #ffffff 100%);
+    linear-gradient(
+      135deg,
+      #fff8fb,
+      #fff1f6,
+      #fdf7ff
+    );
 }
 
 .services-container {
-  width: 100%;
   max-width: 1250px;
   margin: 0 auto;
 }
 
 
-/* =========================================
-   PAGE HEADING
-========================================= */
+/* ==============================
+   HEADING
+============================== */
 
 .services-heading {
   text-align: center;
-  max-width: 750px;
+  max-width: 760px;
   margin: 0 auto 40px;
 }
 
 .services-small-title {
-  display: inline-block;
-
-  margin: 0 0 12px;
-  padding: 8px 18px;
-
-  border-radius: 50px;
-
-  background: #ffe4ef;
-  color: #c2185b;
-
-  font-size: 12px;
+  color: #c22572;
+  font-size: 14px;
   font-weight: 800;
-
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
 .services-heading h1 {
   margin: 0;
-
-  font-size: clamp(34px, 5vw, 52px);
-  line-height: 1.15;
-
+  font-size: 45px;
   font-weight: 800;
-
-  color: #2d1b25;
-}
-
-.services-heading h1::after {
-  content: "";
-
-  display: block;
-
-  width: 70px;
-  height: 4px;
-
-  margin: 18px auto;
-
-  border-radius: 10px;
-
-  background: linear-gradient(
-    90deg,
-    #ff5c9d,
-    #c2185b
-  );
+  color: #382632;
 }
 
 .services-subtitle {
-  max-width: 650px;
-
-  margin: 0 auto;
-
-  color: #76636d;
-
+  color: #75666f;
   font-size: 16px;
   line-height: 1.8;
+  margin-top: 15px;
 }
 
 
-/* =========================================
-   SEARCH TOOLBAR
-========================================= */
+/* ==============================
+   TOOLBAR
+============================== */
 
 .services-toolbar {
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 28px;
 }
 
+
+/* SEARCH */
+
 .services-search-box {
   width: 100%;
-  max-width: 600px;
+  max-width: 520px;
 
   display: flex;
   align-items: center;
-  gap: 12px;
 
-  padding: 5px 18px;
+  background: #ffffff;
 
-  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #f0dce6;
+  border-radius: 14px;
 
-  border: 1px solid #f4d7e3;
-  border-radius: 50px;
-
-  box-shadow:
-    0 10px 35px rgba(194, 24, 91, 0.08);
-
-  transition: 0.3s ease;
-}
-
-.services-search-box:focus-within {
-  border-color: #e83e8c;
+  padding: 0 18px;
 
   box-shadow:
-    0 12px 35px rgba(232, 62, 140, 0.16);
-
-  transform: translateY(-2px);
+    0 7px 25px
+    rgba(133, 70, 103, 0.08);
 }
 
-.services-search-box span {
-  font-size: 19px;
+.search-icon {
+  font-size: 18px;
 }
 
 .services-search-box input {
-  flex: 1;
-
   width: 100%;
-
-  padding: 14px 5px;
-
   border: none;
   outline: none;
 
-  background: transparent;
+  padding: 15px 12px;
 
   font-size: 15px;
 
-  color: #38252f;
-}
-
-.services-search-box input::placeholder {
-  color: #aa939e;
+  background: transparent;
+  color: #333;
 }
 
 
-/* =========================================
+/* ==============================
+   VIEW WISHLIST
+============================== */
+
+.view-wishlist-btn {
+  position: relative;
+
+  border: none;
+
+  padding: 13px 22px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d63384,
+      #a61e66
+    );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 22px
+    rgba(198, 34, 111, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.view-wishlist-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(198, 34, 111, 0.34);
+}
+
+.wishlist-count {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 8px;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  background: white;
+  color: #c22572;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+/* ==============================
    CATEGORY BUTTONS
-========================================= */
+============================== */
 
 .category-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   gap: 12px;
 
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .category-btn {
-  border: 1px solid #f1c9d9;
-
-  background: #ffffff;
-
-  color: #75465a;
-
   padding: 10px 20px;
 
-  border-radius: 50px;
+  border-radius: 25px;
 
-  font-size: 14px;
+  border: 1px solid #ead5df;
+
+  background: white;
+
+  color: #66525d;
+
   font-weight: 600;
 
   cursor: pointer;
 
-  box-shadow:
-    0 5px 15px rgba(70, 30, 50, 0.05);
-
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    color 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .category-btn:hover {
-  color: #ffffff;
+  border-color: #c22572;
 
-  border-color: transparent;
+  color: #c22572;
 
-  background: linear-gradient(
-    135deg,
-    #ff6fa8,
-    #d63384
-  );
-
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 10px 20px rgba(214, 51, 132, 0.2);
+  transform: translateY(-2px);
 }
 
 .active-category {
-  color: #ffffff;
+  background:
+    linear-gradient(
+      135deg,
+      #d63384,
+      #ad246b
+    );
+
+  color: white;
 
   border-color: transparent;
 
-  background: linear-gradient(
-    135deg,
-    #ff6fa8,
-    #c2185b
-  );
-
   box-shadow:
-    0 8px 20px rgba(194, 24, 91, 0.22);
+    0 5px 15px
+    rgba(194, 37, 114, 0.25);
 }
 
 
-/* =========================================
-   SERVICES GRID
-========================================= */
+/* ==============================
+   GRID
+============================== */
 
 .services-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+    repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    );
 
   gap: 28px;
 }
 
 
-/* =========================================
+/* ==============================
    SERVICE CARD
-========================================= */
+============================== */
 
 .service-card {
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-
-  background: rgba(255, 255, 255, 0.96);
-
-  border: 1px solid rgba(244, 210, 224, 0.8);
+  background: white;
 
   border-radius: 22px;
 
+  overflow: hidden;
+
+  border: 1px solid #f3e5ec;
+
   box-shadow:
-    0 12px 35px rgba(71, 31, 48, 0.08);
+    0 10px 35px
+    rgba(85, 49, 68, 0.09);
 
   transition:
     transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
+    box-shadow 0.35s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-
-  border-color: #f3bdd3;
+  transform: translateY(-8px);
 
   box-shadow:
-    0 22px 50px rgba(156, 48, 94, 0.16);
+    0 18px 45px
+    rgba(85, 49, 68, 0.16);
 }
 
 
-/* =========================================
+/* ==============================
    SERVICE IMAGE
-========================================= */
+============================== */
 
 .service-image-wrapper {
   position: relative;
 
   width: 100%;
-  height: 245px;
+  height: 235px;
 
   overflow: hidden;
-
-  background: #f8edf2;
 }
 
 .service-image {
   width: 100%;
   height: 100%;
 
-  display: block;
-
   object-fit: cover;
 
-  transition: transform 0.6s ease;
+  transition: transform 0.5s ease;
 }
 
-.service-card:hover .service-image {
-  transform: scale(1.08);
+.service-card:hover
+.service-image {
+  transform: scale(1.06);
 }
 
 
-/* =========================================
-   CATEGORY BADGE
-========================================= */
+/* CATEGORY BADGE */
 
 .service-category {
   position: absolute;
@@ -317,247 +310,268 @@
   top: 16px;
   left: 16px;
 
-  padding: 7px 14px;
+  padding: 7px 12px;
 
-  border-radius: 50px;
+  border-radius: 20px;
 
-  background: rgba(255, 255, 255, 0.92);
+  background:
+    rgba(255, 255, 255, 0.92);
 
-  color: #b5175b;
+  color: #ad246b;
 
   font-size: 12px;
   font-weight: 800;
 
-  box-shadow:
-    0 5px 15px rgba(0, 0, 0, 0.1);
-
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
 }
 
 
-/* =========================================
-   PRICE BADGE
-========================================= */
+/* PRICE BADGE */
 
 .service-price-badge {
   position: absolute;
 
-  top: 16px;
+  bottom: 16px;
   right: 16px;
 
-  padding: 8px 14px;
+  padding: 8px 13px;
 
-  border-radius: 50px;
+  border-radius: 20px;
 
-  color: #ffffff;
+  background:
+    linear-gradient(
+      135deg,
+      #d63384,
+      #9f1f62
+    );
+
+  color: white;
 
   font-size: 14px;
   font-weight: 800;
-
-  background: linear-gradient(
-    135deg,
-    #ef4f91,
-    #b5175b
-  );
-
-  box-shadow:
-    0 6px 18px rgba(181, 23, 91, 0.28);
 }
 
 
-/* =========================================
-   CARD CONTENT
-========================================= */
+/* ==============================
+   HEART BUTTON
+============================== */
 
-.service-content {
-  flex: 1;
+.heart-btn {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background:
+    rgba(255, 255, 255, 0.93);
+
+  color: #c22572;
+
+  font-size: 26px;
 
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  padding: 23px;
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 15px
+    rgba(0, 0, 0, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+.heart-btn:hover {
+  transform: scale(1.12);
+
+  background: #fff0f6;
+}
+
+.heart-active {
+  background: #c22572;
+
+  color: white;
+}
+
+
+/* ==============================
+   CONTENT
+============================== */
+
+.service-content {
+  padding: 22px;
 }
 
 .service-content h3 {
-  margin: 0 0 12px;
-
-  color: #2d1b25;
-
   font-size: 21px;
-  font-weight: 750;
 
-  line-height: 1.3;
+  margin: 0 0 10px;
+
+  color: #36262f;
 }
 
 .service-description {
-  margin: 0 0 18px;
-
-  color: #78656e;
+  color: #786872;
 
   font-size: 14px;
+
   line-height: 1.7;
 
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-
-  overflow: hidden;
+  min-height: 72px;
 }
 
 
-/* =========================================
-   DURATION + RATING
-========================================= */
+/* ==============================
+   DETAILS
+============================== */
 
 .service-details {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
 
-  gap: 10px;
-
-  margin-top: auto;
-  margin-bottom: 18px;
+  margin: 18px 0;
 
   padding: 12px 0;
 
-  border-top: 1px solid #f4e1e9;
-  border-bottom: 1px solid #f4e1e9;
+  border-top:
+    1px solid #f2e5ec;
 
-  color: #705762;
+  border-bottom:
+    1px solid #f2e5ec;
+
+  color: #6e5965;
 
   font-size: 13px;
+
   font-weight: 600;
 }
 
 
-/* =========================================
-   CARD BOTTOM
-========================================= */
+/* ==============================
+   PRICE
+============================== */
 
-.service-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 15px;
+.service-price-section {
+  margin-bottom: 16px;
 }
 
-.service-bottom small {
-  display: block;
-
-  margin-bottom: 3px;
-
-  color: #a28a95;
-
-  font-size: 11px;
+.service-price-section small {
+  color: #988791;
 }
 
-.service-bottom h4 {
-  margin: 0;
-
-  color: #c2185b;
+.service-price-section h4 {
+  margin: 5px 0 0;
 
   font-size: 23px;
-  font-weight: 800;
+
+  color: #c22572;
 }
 
 
-/* =========================================
-   BOOK NOW BUTTON
-========================================= */
+/* ==============================
+   ACTION BUTTONS
+============================== */
+
+.service-actions {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* WISHLIST */
+
+.wishlist-btn {
+  flex: 1;
+
+  padding: 11px 14px;
+
+  border-radius: 10px;
+
+  border: 2px solid #c22572;
+
+  background: white;
+
+  color: #c22572;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  background: #fff0f6;
+
+  transform: translateY(-2px);
+}
+
+.wishlist-added {
+  background: #c22572;
+
+  color: white;
+}
+
+.wishlist-added:hover {
+  background: #a51c60;
+}
+
+
+/* BOOK */
 
 .book-now-btn {
-  position: relative;
+  flex: 1;
 
-  overflow: hidden;
-
-  min-width: 120px;
-
-  padding: 12px 20px;
+  padding: 12px 16px;
 
   border: none;
-  border-radius: 50px;
 
-  background: linear-gradient(
-    135deg,
-    #ff6fa8,
-    #d63384,
-    #b5175b
-  );
+  border-radius: 10px;
 
-  color: #ffffff;
+  background:
+    linear-gradient(
+      135deg,
+      #d63384,
+      #a71d65
+    );
 
-  font-size: 14px;
+  color: white;
+
   font-weight: 700;
 
   cursor: pointer;
 
   box-shadow:
-    0 8px 20px rgba(214, 51, 132, 0.25);
+    0 6px 18px
+    rgba(198, 34, 111, 0.23);
 
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .book-now-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 
   box-shadow:
-    0 12px 28px rgba(194, 24, 91, 0.35);
-}
-
-.book-now-btn:active {
-  transform: scale(0.97);
+    0 10px 22px
+    rgba(198, 34, 111, 0.32);
 }
 
 
-/* =========================================
-   NO SERVICES MESSAGE
-========================================= */
-
-.services-message {
-  min-height: 300px;
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-
-  padding: 40px;
-
-  background: #ffffff;
-
-  border: 1px solid #f3d8e4;
-  border-radius: 20px;
-
-  box-shadow:
-    0 10px 30px rgba(80, 40, 60, 0.06);
-}
-
-.services-message h3 {
-  margin-bottom: 8px;
-
-  color: #38252f;
-
-  font-size: 24px;
-}
-
-.services-message p {
-  color: #8b7580;
-}
-
-
-/* =========================================
-   LOADING SCREEN
-========================================= */
+/* ==============================
+   LOADING
+============================== */
 
 .services-loading {
-  min-height: 75vh;
+  min-height: 70vh;
 
   display: flex;
   flex-direction: column;
@@ -566,65 +580,39 @@
   align-items: center;
 
   text-align: center;
-
-  padding: 40px 20px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #fffafd,
-      #fff1f7
-    );
 }
 
 .loading-spinner {
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
 
-  border: 6px solid #f7d9e6;
-  border-top-color: #d63384;
+  border:
+    5px solid #f1dbe6;
+
+  border-top-color:
+    #c22572;
 
   border-radius: 50%;
 
-  margin-bottom: 20px;
+  animation:
+    spinner 0.9s linear infinite;
 
-  animation: servicesSpin 0.8s linear infinite;
+  margin-bottom: 20px;
 }
 
-@keyframes servicesSpin {
-  from {
-    transform: rotate(0deg);
-  }
-
+@keyframes spinner {
   to {
     transform: rotate(360deg);
   }
 }
 
-.services-loading h2 {
-  margin: 0 0 8px;
 
-  color: #3b2630;
-
-  font-size: 27px;
-  font-weight: 800;
-}
-
-.services-loading p {
-  margin: 0;
-
-  color: #8b7580;
-
-  font-size: 15px;
-}
-
-
-/* =========================================
-   ERROR SCREEN
-========================================= */
+/* ==============================
+   ERROR
+============================== */
 
 .services-error {
-  min-height: 75vh;
+  min-height: 70vh;
 
   display: flex;
   flex-direction: column;
@@ -633,183 +621,75 @@
   align-items: center;
 
   text-align: center;
-
-  padding: 40px 20px;
-
-  background: #fff9fb;
 }
 
 .services-error h2 {
-  margin-bottom: 10px;
-
-  color: #c2185b;
-
-  font-size: 27px;
-}
-
-.services-error p {
-  margin-bottom: 20px;
-
-  color: #7d6872;
+  color: #a51c60;
 }
 
 .retry-btn {
-  padding: 12px 26px;
+  margin-top: 15px;
+
+  padding: 11px 22px;
 
   border: none;
-  border-radius: 50px;
 
-  background: linear-gradient(
-    135deg,
-    #ff6fa8,
-    #c2185b
-  );
+  border-radius: 8px;
 
-  color: #ffffff;
+  background: #c22572;
 
-  font-size: 14px;
-  font-weight: 700;
+  color: white;
 
   cursor: pointer;
-
-  box-shadow:
-    0 8px 20px rgba(194, 24, 91, 0.22);
-
-  transition: 0.3s ease;
-}
-
-.retry-btn:hover {
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 12px 25px rgba(194, 24, 91, 0.3);
 }
 
 
-/* =========================================
-   TABLET RESPONSIVE
-========================================= */
+/* ==============================
+   NO SERVICES
+============================== */
 
-@media (max-width: 1000px) {
+.services-message {
+  text-align: center;
 
-  .services-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
+  padding: 60px 20px;
+
+  color: #725f69;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
 
   .services-page {
-    padding: 60px 18px 80px;
-  }
-}
-
-
-/* =========================================
-   MOBILE RESPONSIVE
-========================================= */
-
-@media (max-width: 650px) {
-
-  .services-page {
-    padding: 45px 14px 60px;
-  }
-
-  .services-heading {
-    margin-bottom: 30px;
+    padding:
+      45px 15px;
   }
 
   .services-heading h1 {
     font-size: 34px;
   }
 
-  .services-subtitle {
-    font-size: 14px;
+  .services-toolbar {
+    flex-direction: column;
+  }
+
+  .services-search-box {
+    max-width: none;
+  }
+
+  .view-wishlist-btn {
+    width: 100%;
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
-
-    gap: 22px;
+    grid-template-columns:
+      1fr;
   }
 
-  .service-image-wrapper {
-    height: 230px;
+  .service-actions {
+    flex-direction: column;
   }
-
-  .category-buttons {
-    justify-content: flex-start;
-
-    flex-wrap: nowrap;
-
-    overflow-x: auto;
-
-    padding-bottom: 10px;
-  }
-
-  .category-btn {
-    flex: 0 0 auto;
-  }
-
-  .service-content {
-    padding: 20px;
-  }
-
-  .service-bottom {
-    gap: 10px;
-  }
-
-  .book-now-btn {
-    min-width: 110px;
-
-    padding: 11px 17px;
-  }
-}
-
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
-@media (max-width: 400px) {
-
-  .services-heading h1 {
-    font-size: 30px;
-  }
-
-  .service-bottom {
-    align-items: flex-end;
-  }
-
-  .service-bottom h4 {
-    font-size: 20px;
-  }
-
-  .book-now-btn {
-    min-width: 100px;
-
-    padding: 10px 14px;
-
-    font-size: 13px;
-  }
-
-.services-loading {
-  min-height: calc(100vh - 80px);
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-
-  background: linear-gradient(
-    135deg,
-    #fffafd,
-    #fff1f7
-  );
-}
-.services-page {
-  min-height: calc(100vh - 80px);
-}
-
 }
