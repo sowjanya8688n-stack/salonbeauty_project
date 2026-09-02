@@ -162,17 +162,9 @@
       "description": "Relax with a luxury pedicure including nail care, grooming and a beautiful polished finish.",
       "image": "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=85"
     },
+ 
     {
       "id": "19",
-      "name": "Glitter Nail Art",
-      "category": "Nails",
-      "price": 1100,
-      "duration": "60 mins",
-      "description": "Add sparkle to your nails with creative glitter designs for parties and special occasions.",
-      "image": "https://unhaselegantes.com/wp-content/uploads/2024/08/baZTjCJ0QaeL7-p7adAgTA.webp"
-    },
-    {
-      "id": "20",
       "name": "Bridal Nail Art",
       "category": "Nails",
       "price": 1800,
@@ -181,7 +173,7 @@
       "image": "https://c.pxhere.com/images/ff/1f/f74d8875c2f24da258d1fad7540e-1595160.jpg!d"
     },
     {
-      "id": "21",
+      "id": "20",
       "name": "Classic Nail Polish Manicure",
       "category": "Nail",
       "price": 700,
@@ -190,7 +182,7 @@
       "image": "https://images.unsplash.com/photo-1511803574983-43bf1f387ece?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": "22",
+      "id": "21",
       "name": "Hair Straightening",
       "category": "Hair",
       "price": 2500,
@@ -199,7 +191,7 @@
       "image": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": "23",
+      "id": "22",
       "name": "Deep Cleansing Facial",
       "category": "Face",
       "price": 1200,
@@ -208,7 +200,7 @@
       "image": "https://static.wixstatic.com/media/8eefe1_54e83aed5f314207acdf421e9132f6da~mv2.png/v1/fill/w_980,h_784,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/8eefe1_54e83aed5f314207acdf421e9132f6da~mv2.png"
     },
     {
-      "id": "24",
+      "id": "23",
       "name": "Gold Facial",
       "category": "Face",
       "price": 1800,
@@ -217,7 +209,7 @@
       "image": "https://universalqueensalon.com/_next/image?q=75&url=%2Fimages%2Fservices%2Fskincare.png&w=3840"
     },
     {
-      "id": "25",
+      "id": "24",
       "name": "Detan Face Treatment",
       "category": "Face",
       "price": 1100,
@@ -226,7 +218,7 @@
       "image": "https://images.unsplash.com/photo-1761718210089-ba3bb5ccb54f?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": "26",
+      "id": "25",
       "name": "Engagement Makeup",
       "category": "Makeup",
       "price": 3500,
@@ -235,7 +227,7 @@
       "image": "https://i.pinimg.com/originals/1f/72/b9/1f72b941b2c69854095891dd583c537a.jpg"
     },
     {
-      "id": "27",
+      "id": "26",
       "name": "HD Makeup",
       "category": "Makeup",
       "price": 4000,
@@ -244,7 +236,7 @@
       "image": "https://images.unsplash.com/photo-1643224847210-531cffb1aaff?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": "28",
+      "id": "27",
       "name": "Chrome Nail Art",
       "category": "Nails",
       "price": 1400,
@@ -253,7 +245,7 @@
       "image": "https://nailosphere.com/wp-content/uploads/2024/10/a-close-up-artistic-photo-of-a-meticulously-manicu-t2pp7PsfSsKsi1dNOTHOZQ-3olQOkgGR-ek8-s-pmUUnA-574x1024.png"
     },
     {
-      "id": "29",
+      "id": "28",
       "name": "Ombre Nail Art",
       "category": "Nails",
       "price": 1500,
@@ -262,7 +254,7 @@
       "image": "https://images.unsplash.com/photo-1772322586702-73125782bd99?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": "30",
+      "id": "29",
       "name": "Spa Manicure",
       "category": "Nails",
       "price": 1000,
@@ -271,7 +263,7 @@
       "image": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&q=85"
     },
     {
-      "id": "31",
+      "id": "30",
       "name": "Nail Extensions",
       "category": "Nails",
       "price": 1900,
@@ -279,17 +271,10 @@
       "description": "Enhance your natural nails with stylish extensions customized to your preferred shape, length and finish.",
       "image": "https://images.unsplash.com/photo-1754799670380-17640d939e32?auto=format&fit=crop&w=900&q=85"
     },
+   
+      
     {
-      "id": "32",
-      "name": "Brightening Face Treatment",
-      "category": "Face",
-      "price": 1600,
-      "duration": "60 mins",
-      "description": "Refresh and brighten dull-looking skin with a professional face treatment designed for a smooth and radiant appearance.",
-      "image": "https://purespadirect.com/cdn/shop/articles/the-step-by-step-protocol-for-a-brightening-vitamin-c-facial_20250715055756_20250715.jpg?v=1755348307"
-    },
-    {
-      "id": "33",
+      "id": "31",
       "name": "Luxury Gel Nail Extensions",
       "category": "Nails",
       "price": 2400,
